@@ -14,31 +14,25 @@
 
 module gocloud.dev
 
-go 1.12
+go 1.24.0
 
 require (
-	cloud.google.com/go v0.103.0 // indirect
-	cloud.google.com/go/compute v1.7.0
 	cloud.google.com/go/firestore v1.6.1
 	cloud.google.com/go/iam v0.3.0
 	cloud.google.com/go/kms v1.4.0
-	cloud.google.com/go/monitoring v1.5.0 // indirect
 	cloud.google.com/go/pubsub v1.24.0
 	cloud.google.com/go/secretmanager v1.5.0
 	cloud.google.com/go/storage v1.24.0
-	cloud.google.com/go/trace v1.2.0 // indirect
 	contrib.go.opencensus.io/exporter/aws v0.0.0-20200617204711-c478e41e60e9
 	contrib.go.opencensus.io/exporter/stackdriver v0.13.13
 	contrib.go.opencensus.io/integrations/ocsql v0.1.7
 	github.com/Azure/azure-amqp-common-go/v3 v3.2.3
-	github.com/Azure/azure-sdk-for-go v66.0.0+incompatible // indirect
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.1
-	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.1.0
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.11.1
+	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.6.0
 	github.com/Azure/azure-sdk-for-go/sdk/keyvault/azkeys v0.8.1
 	github.com/Azure/azure-sdk-for-go/sdk/messaging/azservicebus v1.0.2
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v0.4.1
 	github.com/Azure/go-amqp v0.17.5
-	github.com/Azure/go-autorest/autorest v0.11.28 // indirect
 	github.com/Azure/go-autorest/autorest/to v0.4.0
 	github.com/GoogleCloudPlatform/cloudsql-proxy v1.31.2
 	github.com/aws/aws-sdk-go v1.44.68
@@ -55,26 +49,61 @@ require (
 	github.com/aws/smithy-go v1.12.0
 	github.com/fsnotify/fsnotify v1.5.4
 	github.com/go-sql-driver/mysql v1.6.0
-	github.com/golang-jwt/jwt/v4 v4.4.2 // indirect
-	github.com/google/go-cmp v0.5.8
+	github.com/google/go-cmp v0.7.0
 	github.com/google/go-replayers/grpcreplay v1.1.0
 	github.com/google/go-replayers/httpreplay v1.1.1
-	github.com/google/martian v2.1.1-0.20190517191504-25dcb96d9e51+incompatible // indirect
-	github.com/google/uuid v1.3.0
+	github.com/google/uuid v1.6.0
 	github.com/google/wire v0.5.0
 	github.com/googleapis/gax-go/v2 v2.4.0
-	github.com/klauspost/compress v1.15.1 // indirect
 	github.com/lib/pq v1.10.6
-	github.com/prometheus/prometheus v0.37.0 // indirect
 	go.opencensus.io v0.23.0
-	go.uber.org/multierr v1.8.0 // indirect
-	golang.org/x/crypto v0.0.0-20220722155217-630584e8d5aa
-	golang.org/x/net v0.0.0-20220802222814-0bcc04d9c69b
-	golang.org/x/oauth2 v0.0.0-20220722155238-128564f6959c
-	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
+	golang.org/x/crypto v0.46.0
+	golang.org/x/net v0.48.0
+	golang.org/x/oauth2 v0.34.0
+	golang.org/x/sync v0.19.0
 	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f
 	google.golang.org/api v0.91.0
 	google.golang.org/genproto v0.0.0-20220802133213-ce4fa296bf78
-	google.golang.org/grpc v1.48.0
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/grpc v1.79.3
+	google.golang.org/protobuf v1.36.10
+)
+
+require (
+	cloud.google.com/go v0.103.0 // indirect
+	cloud.google.com/go/monitoring v1.5.0 // indirect
+	cloud.google.com/go/trace v1.2.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/internal v1.8.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/keyvault/internal v0.7.0 // indirect
+	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
+	github.com/AzureAD/microsoft-authentication-library-for-go v1.2.2 // indirect
+	github.com/aws/aws-sdk-go-v2/aws/protocol/eventstream v1.4.3 // indirect
+	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.12.9 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.1.15 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.4.9 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/ini v1.3.16 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/v4a v1.0.6 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.9.3 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/checksum v1.1.10 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.9.9 // indirect
+	github.com/aws/aws-sdk-go-v2/service/internal/s3shared v1.13.9 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sso v1.11.13 // indirect
+	github.com/aws/aws-sdk-go-v2/service/sts v1.16.10 // indirect
+	github.com/census-instrumentation/opencensus-proto v0.3.0 // indirect
+	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
+	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
+	github.com/golang/protobuf v1.5.4 // indirect
+	github.com/google/martian/v3 v3.3.2 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.1.0 // indirect
+	github.com/jmespath/go-jmespath v0.4.0 // indirect
+	github.com/klauspost/compress v1.15.1 // indirect
+	github.com/kylelemons/godebug v1.1.0 // indirect
+	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
+	github.com/prometheus/prometheus v0.37.0 // indirect
+	go.uber.org/atomic v1.9.0 // indirect
+	go.uber.org/multierr v1.8.0 // indirect
+	go.uber.org/zap v1.21.0 // indirect
+	golang.org/x/sys v0.39.0 // indirect
+	golang.org/x/text v0.32.0 // indirect
+	golang.org/x/time v0.0.0-20220722155302-e5dcc9cfc0b9 // indirect
+	google.golang.org/appengine v1.6.7 // indirect
 )
